@@ -1,0 +1,60 @@
+[
+  {
+    "partner": false,
+    "region": "All countries not covered by exclusive partners.",
+    "name": "Harry Owen",
+    "bio": "A recognized expert in the field of Raman spectroscopy focused on creating the Next Generation of Raman Immersion Probe Optics to improve existing and develop new applications and market opportunities.",
+    "company": "HORC",
+    "address": "Michigan, USA",
+    "email": "harry@horc.us",
+    "phone": "+1 248-933-6935",
+    "website": "https://www.horc.us/",
+    "order": 0
+  },
+  {
+    "partner": true,
+    "region": "for Japan",
+    "name": "Dr. Hiroshi Hisada",
+    "bio": "Hiroshi Hisada founded Tekanalysis, a company that sells and supports Raman analyzers that can be used for drug analysis and research using vibration spectroscopy. He graduated from Meiji Pharmaceutical University Graduate School and obtained his doctorate (Pharmacy and Health Sciences).",
+    "company": "Tekanalysis Inc.",
+    "address": "Osaka, Japan",
+    "email": "hisada@tekanalysis.jp",
+    "phone": "+81 90 4037 2065",
+    "website": "https://tekanalysis.jp/",
+    "order": 1
+  },
+  {
+    "partner": true,
+    "region": "for all of Ireland",
+    "name": "Donnchadha Quilty",
+    "bio": "Particular Sciences have worked with lab and at-line Raman systems for several years. Particular Sciences specialize in the material characterization of chemicals. They have a 31-year track record in Ireland with world-leading instrument suppliers offering full suites of support to Pharma, BioPharma, Medical Devices, NanoTechnology and specialty materials companies.",
+    "company": "Particular Sciences Ltd.",
+    "address": "Dublin, Ireland",
+    "email": "donq@particular.ie",
+    "phone": "+353 (1) 820 5395",
+    "website": "https://www.particular.ie/",
+    "order": 2
+  },
+  {
+    "partner": true,
+    "region": "for Korea",
+    "name": "Kon-Pyo, Hong",
+    "company": "Sunil-Ina Instrument Co., Ltd.",
+    "address": "5, Dongwon-ro 21Beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, 13547 Korea",
+    "email": "sunilina@sunilina.com",
+    "phone": "+82 (0)31-716-5199",
+    "website": "https://www.sunilina.com/",
+    "order": 3
+  },
+  {
+    "partner": true,
+    "region": "for England, Scotland, and Wales",
+    "name": "John Andrews",
+    "company": "Clairet Scientific Ltd.",
+    "address": "Northampton, NN3 6AP, UK",
+    "email": "info@clairet.co.uk",
+    "phone": "+44 (0)1604 494411",
+    "website": "https://www.clairet.co.uk/",
+    "order": 4
+  }
+]

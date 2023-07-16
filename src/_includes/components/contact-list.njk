@@ -1,0 +1,66 @@
+{%- for item in contacts -%}
+<div class="bg-white border-gray-200 -mx-4 md:mx-0 md:shadow-lg md:rounded-lg overflow-hidden">
+    <div class="px-4 py-5 sm:px-6">
+        {% if item.partner %}
+            <h3 class="text-3xl leading-6 font-bold font-display text-gray-900">Exclusive Partner</h3>
+        {% else %}
+            <h3 class="text-3xl leading-6 font-bold font-display text-gray-900">Primary</h3>
+        {% endif %}
+        <p class="mt-1 max-w-2xl text-gray-500">
+            {{ item.region }}
+        </p>
+    </div>
+    <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
+        <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Full name
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              {{ item.name }}
+            </dd>
+          </div>
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Company
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              {{ item.company }}
+            </dd>
+          </div>
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Email address
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              <a href="mailto:{{ item.email }}">{{ item.email }}</a>
+            </dd>
+          </div>
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Telephone
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              <a href="tel:{{ item.phone }}">{{ item.phone }}</a>
+            </dd>
+          </div>
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Address
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              {{ item.address }}
+            </dd>
+          </div>
+          <div class="sm:col-span-1">
+            <dt class="font-medium text-gray-500">
+              Website
+            </dt>
+            <dd class="mt-1 text-gray-900">
+              <a href={{ item.website }}>{{ item.website }}</a>
+            </dd>
+          </div>
+        </dl>
+    </div>
+</div>
+{%- endfor -%}

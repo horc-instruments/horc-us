@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.horc.us/
+
+# Sitemap
+Sitemap: https://www.horc.us/sitemap.xml

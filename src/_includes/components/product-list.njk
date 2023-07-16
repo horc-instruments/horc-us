@@ -1,0 +1,14 @@
+
+{%- for item in products -%}
+<section id={{item.data.slug}}>
+    <div class="text-center font-symbol text-8xl -mt-12 absolute w-full"></div>
+    <div class="container mx-auto py-12 px-4 space-y-8">
+        <header class="mb-8" role="contentinfo">
+        <h1>{{item.data.title}}<br/><small>{{item.data.subtitle}}</small></h1>
+        </header>
+        <article class="prose md:prose-lg lg:prose-2xl max-w-none">
+        {{item.content | safe}}
+        </article>
+    </div>
+</section>
+{% endfor %}

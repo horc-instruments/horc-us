@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#8f804e">
+	<meta name="theme-color" content="#8f804e">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="view-transition" content="same-origin">
+    <!-- assets -->
+    <link rel="canonical" href="{{ metadata.url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento&display=swap"> 
+    <link rel="stylesheet" href="{{ '/fonts/bodoni.css' | url}}"> 
+    <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
+    <!-- page data -->
+    <title>{{title or metadata.title}}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="keywords" content="{{ metadata.keywords }}">
+    <meta name="content" content="{{ metadata.keywords }}">
+    <meta name="property" content="{{ metadata.keywords }}">
+    <!-- OG -->
+    <meta property="og:site_name" content="{{ metadata.site }}">
+    <meta property="og:url" content="{{ metadata.url }}">
+    <meta property="og:title" content="{{ title or metadata.title }}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:image" content="{{ metadata.logo }}">
+    </head>
+
+    <body class="font-serif font-normal">
+        {% include "components/header.njk" %}
+        <main class="flex-grow">
+            {{ content | safe }}
+        </main>
+        {% include "components/footer.njk" %}
+
+        <script src="{{ '/scripts/nav.js' | url }}"></script>
+    </body>
+</html>

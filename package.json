@@ -1,0 +1,46 @@
+{
+  "name": "horc.us",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "css:dir": "mkdir -p _site/styles",
+    "css:build": "tailwindcss -i src/styles/tailwind.css -o _site/styles/index.css --postcss",
+    "css:watch": "tailwindcss -i src/styles/tailwind.css -o _site/styles/index.css --watch --postcss",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+    "start": "eleventy --serve & npm run css:watch",
+    "build": "npx @11ty/eleventy && npm run css:build",
+    "audit": "npx @sandworm/audit@latest --fail-on='[\"*.critical\", \"*.high\"]'",
+    "format": "npx prettier --write --ignore-unknown"
+  },
+  "keywords": [],
+  "author": "Kevin McClellan<kdmcclel@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@glidejs/glide": "^3.6.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "date-fns": "^2.30.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not IE 11"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "yarn format",
+      "yarn audit"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+
+{%- for item in products -%}
+<div class="flex flex-col border-gray-200 bg-gray-100 -mx-4 md:mx-0 md:shadow-lg md:rounded-lg overflow-hidden" {% if item.data.coming_soon %} diabled {% endif %}>
+    {% if item.data.coming_soon %}
+    <img class={`${fit} ${position} h-64 w-full !my-0`} src={image} alt={title}/>
+    <div class="body p-4 border-t">
+        <h3>{{ item.data.sn }}<small class="text-sm float-right">{{ item.data.coming_soon}}</small></h3>
+        <p class="text-lg">{{item.data.description}}</p>
+    </div>
+    {% else %}
+    <a href="#{{item.data.slug}}" class="decoration-none grow-0">
+        <img class="{{item.data['object-fit'] or 'object-cover'}} {{item.data['object-position'] or 'object-right-bottom'}} h-64 w-full !my-0" src="{{item.data.image}}" alt="{{item.data.title}}"/>
+    </a>
+    <div class="body bg-white p-4 border-t grow">
+        <a href="#{{item.data.slug}}" class="no-underline">
+            <h3 class="!mt-0">{{item.data.sn}}</h3>
+        </a>
+        <p class="text-lg">{{item.data.description}}</p>
+    </div>
+    {% endif %}
+</div>
+{%- endfor -%}
