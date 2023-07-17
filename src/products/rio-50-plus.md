@@ -28,7 +28,7 @@ The technique uses diffuse scattering and photon migration within the bulk of th
 </div>
 <div class="md:col-span-3">
 <h3>RIO 50 Plus Probe Optic</h3>
-<img alt="RIO 50 Plus - Immersion or Non-Contact Optic" src="/images/rio-50-plus-immersion-non-contact-optic.jpg"/>
+{% image "public/images/rio-50-plus-immersion-non-contact-optic.jpg", "RIO 50 Plus - Immersion or Non-Contact Optic" %}
 </div>
 <div class="md:col-span-2">
 <h3>Applications</h3>
@@ -44,5 +44,5 @@ The technique uses diffuse scattering and photon migration within the bulk of th
 <div class="md:col-span-4">
 <h3>Probe Comparison</h3>
 <p>RIO 50 plus (Blue Spectra) versus PhAT Probe (Red Spectra)</p>
-<img alt="RIO 50 Plus vs PhAT Probe" src="/images/probe-comparison-rio-50-plus-vs-phat-probe.png"/>
+{% image "public/images/probe-comparison-rio-50-plus-vs-phat-probe.png", "RIO 50 Plus vs PhAT Probe" %}
 </div>

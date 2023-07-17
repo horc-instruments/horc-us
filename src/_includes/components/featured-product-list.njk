@@ -9,7 +9,7 @@
     </div>
     {% else %}
     <a href="#{{item.data.slug}}" class="decoration-none grow-0">
-        <img class="{{item.data['object-fit'] or 'object-cover'}} {{item.data['object-position'] or 'object-right-bottom'}} h-64 w-full !my-0" src="{{item.data.image}}" alt="{{item.data.title}}"/>
+        {% image "public"+item.data.image, item.data.title, (item.data['object-fit'] or 'object-cover') + ' ' + (item.data['object-position'] or 'object-right-bottom') + " h-64 w-full !my-0"  %}
     </a>
     <div class="body bg-white p-4 border-t grow">
         <a href="#{{item.data.slug}}" class="no-underline">

@@ -14,7 +14,7 @@ active: true
 featured: true
 ---
 
-![Zero X Plus](/images/zero-x-plus-2.png)
+{% image "public/images/zero-x-plus-2.png", "Zero X Plus" %}
 
 ### Quantitative Measurements and Improved Spectral Precision
 
@@ -29,17 +29,17 @@ The Zero X Plus microscope objective incorporates "Collimated Laser with Backsca
 
 The Raman spectra below collected from a generic Excedrin tablet using a research Raman microscope with a focusing 20X objective. The surface coating generates a strong unwanted background signal
 
-![Figure 1](/images/reduce-unwanted-signals-surface-coatings.png)
+{% image "public/images/reduce-unwanted-signals-surface-coatings.png", "Figure 1" %}
 
 The Raman spectra below was collected from the same generic tablet using "Collimated Laser with Backscatter Collection" on the same Raman microscope. The collimated laser is transmitted through the surface coating and the Raman spectra from the bulk of the sample dominates the combined Raman spectra as per Transmission Raman.
 
-![Figure 2](/images/rio-100-excedrin-collimated-beam-backscattered-collection.png)
+{% image "public/images/rio-100-excedrin-collimated-beam-backscattered-collection.png", "Figure 2" %}
 
 ### Representative Sampling
 
 The Zero X Plus on a Raman microscope will enable representative sampling from the "Collimated Laser with Backscatter Collection" design over the full Raman spectral range (5 to 3425 cm<sup>-1</sup>) and not just the limited wavenumber ranges of the PhAT probe and Transmission Raman. Below RIO 50 Plus (Blue Spectra) and PhAT Probe (Red Spectra)
 
-![Figure 3](/images/probe-comparison-rio-50-plus-vs-phat-probe.png)
+{% image "public/images/probe-comparison-rio-50-plus-vs-phat-probe.png", "Figure 3" %}
 
 ### Real-Time Calibration
 
@@ -47,7 +47,7 @@ The Raman spectral plot below is of an Aspirin tablet with the reference Raman b
 
 Unwanted wavenumber shifts observed in Raman spectra from the laser or spectrograph due to thermal drifting or instability can be corrected for by using the CaF<sup>2</sup> Raman reference band.
 
-![Figure 4](/images/raman-reference-band-aspirin.jpeg#w-1/2)
+{% image "public/images/raman-reference-band-aspirin.jpeg", "Figure 4", "w-1/2" %}
 
 ### Features
 

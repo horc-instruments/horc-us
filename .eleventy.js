@@ -1,5 +1,6 @@
 const collections = require("./config/collections.js");
 const filters = require("./config/filters.js");
+const shortcodes = require("./config/shortcodes.js");
 
 module.exports = function (config) {
   // Handling assets (images, fonts, etc.)
@@ -13,6 +14,12 @@ module.exports = function (config) {
   // collections
   Object.keys(collections).forEach((name) => {
     config.addCollection(name, collections[name]);
+  });
+
+  // shortcodes
+  Object.keys(shortcodes).forEach((name) => {
+    config.addShortcode(name, shortcodes[name]);
+    config.addNunjucksAsyncShortcode(name, shortcodes[name]);
   });
 
   return {

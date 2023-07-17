@@ -27,7 +27,7 @@ Unwanted wavenumber shifts observed in Raman spectra from the laser or spectrogr
 </div>
 <div class="md:col-span-3">
 <h3>RIO 50 Plus Probe Optic</h3>
-<img alt="RIO 50 Plus - Immersion or Non-Contact Optic" src="/images/rio-50-plus-immersion-non-contact-optic.jpg"/>
+{% image "public/images/rio-50-plus-immersion-non-contact-optic.jpg", "RIO 50 Plus - Immersion or Non-Contact Optic" %}
 </div>
 <div class="md:col-span-2">
 <h3>Applications</h3>
@@ -43,5 +43,5 @@ Unwanted wavenumber shifts observed in Raman spectra from the laser or spectrogr
 <div class="md:col-span-4">
 <h3>Raman Reference Band</h3>
 <p>The 321.0 w avenumber Raman band in the plot below is from the integrated CaF<sub>2</sub> optic</p>
-<img alt="Raman Reference Band" src="/images/raman-reference-band.png"/>
+{% image "public/images/raman-reference-band.png", "Raman Reference Band" %}
 </div>
